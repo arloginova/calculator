@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Калькулятор машинок Hot Wheels</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+       <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+        <div class="content">
+        <h1>Калькулятор машинок Hot Wheels</h1>
+        <div class= "question1">
+          <p>Сколько машинок хотите купить?</p>
+          <div class="numberquestion">
+        <input
+          type="number"
+          placeholder="Сколько машинок хотите купить?"
+          id="input1"
+          value="10"
+        />
+          </div>
+        </div>
+        <div class= "question2">
+          <p>Какие машинки хотите взять?</p>
+          <div class="carquestion">
+          <div class = "car"> 
+              <input
+              name = "car"
+              type="radio"
+              id="mane"
+              value="250"
+              data-name = "обычные"
+          /> 
+          <label for="mane">Мейн</label>
+          </div>
+          <div class = "car"> 
+              <input
+              name = "car"
+              type="radio"
+              id="premium"
+              value="2000"
+              data-name = "дорогие"
+          /> 
+          <label for="premium">Премиум</label>
+          </div>
+
+          <div class = "question3">
+            <p> Какая доставка?</p>
+            <div class="dostavkaquestion">
+            <div class = "dostavka">
+                <input
+                name = "dostavka"
+                type="radio"
+                id="pochta"
+                value="250"
+        
+            />
+            <label for="pochta">Через почту</label>
+            </div>
+            <div class = "ozon">
+                <input
+                name = "dostavka"
+                type="radio"
+                id="ozon"
+                value="160"
+        
+            />
+            <label for="ozon">Через озон</label>
+            </div>
+            </div>
+           </div>
+           
+           <div class="submit">
+            <button id="submit">Рассчитать</button>
+              <div>
+                <h4>К оплате:</h4>
+                <p><span id="result">0</span> р. 
+        
+              </div>
+            </div>
+            </div>
+          </div>
+      
+        </body>
+      </html>
+      
